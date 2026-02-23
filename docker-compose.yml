@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  shanti-react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shanti_villa_web
+    ports:
+      - "8081:80"
+    restart: always
